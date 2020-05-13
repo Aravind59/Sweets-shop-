@@ -1,0 +1,10 @@
+<div>
+    <app-header [url]="sweetCardDetails.url"></app-header>
+    <app-sweet-title [title]="sweetCardDetails.title" style="font-weight: bold;"></app-sweet-title>
+    <app-sweet-description [description]="sweetCardDetails.description"></app-sweet-description>
+    <div fxLayout="row">
+
+    <app-sweet-variation [variants]="sweetCardDetails.variants" [fxFlex]="60"></app-sweet-variation>
+    <app-sweet-add-cart [fxFlex]="40"></app-sweet-add-cart>
+    </div>
+</div>

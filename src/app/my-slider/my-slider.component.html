@@ -1,0 +1,27 @@
+<div fxLayout="row">
+  <div [fxFlex]="100">
+<mat-carousel
+  timings="250ms ease-in"
+  [autoplay]="true"
+  interval="5000"
+  color="orange"
+  maxWidth="auto"
+  proportion="25"
+  slides="5"
+  [loop]="true"
+  [hideArrows]="false"
+  [hideIndicators]="false"
+  [useKeyboard]="true"
+  [useMouseWheel]="false"
+  orientation="ltr"
+>
+  <mat-carousel-slide
+    #matCarouselSlide
+    *ngFor="let slide of slides; let i = index"
+    [image]="slide.url"
+    
+    [hideOverlay]="false"
+  ></mat-carousel-slide>
+</mat-carousel>
+</div>
+</div>

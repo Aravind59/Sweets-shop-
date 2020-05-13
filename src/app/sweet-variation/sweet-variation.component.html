@@ -1,0 +1,8 @@
+    <mat-select [(ngModel)]="defaultvalue" style="margin-top: 10px;">
+    <mat-option [value]="variant.weight" *ngFor="let variant of variants">
+      {{variant.weight}} - ${{variant.price}}    
+    </mat-option>
+  </mat-select>
+
+  
+

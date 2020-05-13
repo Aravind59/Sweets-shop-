@@ -1,0 +1,11 @@
+<div class="text-alignment"><span>OUR  </span><span style="color: orange;">MENU</span></div>
+<div fxLayout="row" fxLayoutAlign="center center">
+    <mat-card fxFlex="100">
+      <div fxLayout="row">
+        <div *ngFor="let sweetCard of sweetCardsList"  [fxFlex]="30" style="margin:10px" (click)="displayDetails(sweetCard)">  
+            <app-header [url]="sweetCard.url" ></app-header>  
+            
+          </div>
+      </div>
+  </mat-card>
+  </div>

@@ -1,0 +1,84 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+/* You can add global styles to this file, and also import other style files */
+
+.text-alignment{
+    text-align: center;
+    margin: 15px;
+}
+.button-color{
+    background-color: orange;
+    color: white;
+    text-align: center;
+}
+label-font{
+    font-size: 15px;;
+}
+.display-backgroung-Image{
+    background-image: url('assets/Images/bg.png');
+}
+
+.header-style{
+    padding-top: 40px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+}
+
+.mat-tab-label{
+    background-color: black;
+    color: white;
+    min-width: 190px !important;
+}
+.mat-tab-label-active{
+    /* background-color: orange; */
+    color: white;
+    border-color: orange !important;
+    /* border-top-right-radius: 40px !important;
+    border-bottom-right-radius: 40px !important; */
+    background-color: orange !important;
+
+}
+
+.badge {
+    /* position: absolute; */
+    /* top: 0; */
+    /* left: 50%; */
+    margin-right: 5px;
+    font-size: 14px;
+    line-height: 13px;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background-color: #ffffff; 
+    border: 4px solid #ffffff;
+    color: black;
+    text-align: center;
+  }
+
+  a:hover{
+    cursor: pointer;
+  }
+  .cart-style{
+    text-align: center;
+    
+  }
+
+  .footer-menu{
+      margin-right: 10px;
+  }
+  .add-color{
+      background-color: orange;
+      color: white;
+  }
+
+  .active{
+      color: orange !important;
+  }
+  .one-color{
+      background-color: white;
+      color: black;
+  }
+/* 
+button.mat-mini-fab.mat-button-base.mat-accent.ng-star-inserted{
+    background-color: orange !important;
+} */

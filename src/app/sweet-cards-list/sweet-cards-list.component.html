@@ -1,0 +1,11 @@
+<div fxLayout="row" fxLayoutAlign="center center">
+    <mat-card fxFlex="100">
+      <div fxLayout="row">
+        <div *ngFor="let sweetCard of sweetCardsList" style="margin:10px;padding-bottom: 20px;"  [fxFlex]="30" >  
+            
+            <app-sweet-card [sweetCardDetails]="sweetCard" ></app-sweet-card>  
+            
+          </div>
+      </div>
+  </mat-card>
+  </div>

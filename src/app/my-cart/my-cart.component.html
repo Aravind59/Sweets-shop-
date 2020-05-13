@@ -1,0 +1,56 @@
+<mat-tab-group>
+    <mat-tab  class="tab-style">
+        <ng-template matTabLabel>
+            <span><span class="badge">1</span>Review & Address</span>
+        </ng-template>
+        <div fxLayout="row" style="margin: 15px;"> 
+            <div>{{sweetCardsList.length}}  products in cart</div>
+ 
+        </div>
+          <div fxLayout="row" fxLayoutAlign="center center">
+       
+            <mat-card fxFlex="100">
+            
+          <div fxLayout="row">
+              
+            <div *ngFor="let sweetCard of sweetCardsList" style="margin:10px;padding-bottom: 20px;"  [fxFlex]="30" >  
+                <app-header [url]="sweetCard.url"></app-header>
+                <app-sweet-title [title]="sweetCard.title" ></app-sweet-title>               
+                <div><span [fxFlex]="30" class="cart-style add-color"><mat-icon>remove</mat-icon></span>
+                    <span [fxFlex]="40" class="cart-style one-color">1</span>
+                    <span [fxFlex]="30" class="cart-style add-color"><mat-icon>add</mat-icon></span>
+                </div>
+              </div>
+          </div>
+      </mat-card>
+      </div>
+     
+ <hr />
+ <div fxLayout="row">
+    <div fxFlex="80">
+        <div>Cart total: $50</div>
+        <div>Tax: $5</div>
+        <div>Shipping charges: $1</div>
+    </div>
+    <div fxFlex="20">
+        <button mat-button class="button-color">Select Address <mat-icon>keyboard_arrow_right</mat-icon></button>
+    </div>
+</div>
+    </mat-tab>
+    <mat-tab class="tab-style"> 
+        <ng-template matTabLabel>
+            <span><span class="badge">2</span>Select Address</span>
+        </ng-template>
+     </mat-tab>
+    <mat-tab class="tab-style"> 
+        <ng-template matTabLabel>
+            <span><span class="badge">3</span>Check Quote</span>
+        </ng-template>
+    </mat-tab>
+    <mat-tab class="tab-style"> 
+        <ng-template matTabLabel>
+            <span><span class="badge">4</span>Order Placed</span>
+        </ng-template>
+
+    </mat-tab>
+  </mat-tab-group>

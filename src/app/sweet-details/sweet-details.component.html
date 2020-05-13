@@ -1,0 +1,23 @@
+<div fxLayout="row" style="margin-top: 20px;margin-bottom: 60px;;">
+    <div [fxFlex]="20"></div>
+    <app-header [url]="sweetCardDetails.url"></app-header>
+    <div [fxFlex]="5"></div>
+    <div [fxFlex]="20">
+            <app-sweet-title [title]="sweetCardDetails.title" style="font-weight: bold;"></app-sweet-title>
+            <label for="description" class="label-font">Description:</label>
+
+    <app-sweet-description [description]="sweetCardDetails.description" ></app-sweet-description>
+    <label for="quantity" class="label-font">Quantity & Price: </label>
+
+    <app-sweet-variation [variants]="sweetCardDetails.variants"></app-sweet-variation>
+    <app-sweet-add-cart style="margin-top:10px"></app-sweet-add-cart>
+    
+    </div>
+</div>
+<div fxLayout="row">
+<div class="display-backgroung-Image" [fxFlex]="100">
+    <app-sweets-header [header1]="'YOU MAY'" [header2]="'ALSO LIKE'"></app-sweets-header>
+    <app-sweet-cards-list></app-sweet-cards-list>
+  </div>
+</div>
+
